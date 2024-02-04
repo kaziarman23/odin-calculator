@@ -4,68 +4,81 @@
     box-sizing: border-box;
 }
 
-
 .wrapper{
-    width: 500px;
-    height: auto;
+    width: 400px;
+    height: 700px;
     margin: 0 auto;
-}
-
-body{
-    background-color: white;
 }
 
 .header-title{
     text-align: center;
-    justify-content: center;
-    font-weight: bolder;
-    color:black;
-    text-shadow: 10px;
     margin-bottom: 50px;
 }
 
-.contener{
-    background-color: grey;
-    width: 500px;
-    height: 545px;
-    border: 3px solid black;
-}
-
-.display{
-    width: 400px;
-    height: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    background-color: white;
-}
-
-
-.grid_wrapper{
-    margin: 0 auto;
-    padding: 10px;
-    display: grid;
-    width: 400px;
-    height: 366px;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    grid-template-columns: 70px 70px 70px 70px;
-    grid-gap: 32px;
-}
-
-.boxs{
-    font-size: 30px;
+body{
+    width:100%;
+    height: 100vh;
     justify-content: center;
-    background-color: gold;
-    color: black;    
-    text-align: center;
+    align-items: center;
+    background-color: skyblue;
 }
 
-.box17{
-    background-color: orange;
-    grid-column:3/5;
+.contener{
+    width: 400px;
+    height: 595px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    padding: 20px;
 }
 
-.boxs:hover{
+#inputBox{
+    width: 320px;
+    padding: 24px;
+    margin: 10px;
+    font-size: 65px;
+    text-align: right;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
+    color: white;
+    background-color: black;
+    border: 2px solid  rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    text-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+    box-shadow: -1px 2px 10px rgba(0,0,0,0.5);
+}
+
+.ac, .del{
+    font-size: 20px;
+}
+
+button:hover{
+    color: white;
     background-color: orange;
-    color: red;
     padding: 10px;
+}
+
+.equal_btn{
+    background-color: orange;
+    color: black;
+}
+
+.operator{
+    color: orange;
 }
