@@ -3,6 +3,7 @@ let buttons = document.querySelectorAll("button")
 
 const btn_Array = Array.from(buttons)
 let string = ""
+
 btn_Array.forEach(function(btn){
     btn.addEventListener("click",function(e){
 
@@ -15,7 +16,7 @@ btn_Array.forEach(function(btn){
             display.value = string
         }
         else if(e.target.innerHTML === '='){
-            string = eval(string);
+            string = eval(string);           // eval Function help us to calculate numbers
             display.value = string;
         }
         else{
